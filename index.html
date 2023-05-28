@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: customFont;
+        src: url(font/Outfit-Regular.ttf);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .bg-light-gray {
+        background-color: hsl(212, 45%, 89%);
+      }
+      .bg-white {
+        background-color: hsl(0, 0%, 100%);
+      }
+      .bg-grayish-blue {
+        background-color: hsl(220, 15%, 55%);
+      }
+      .bg-dark-blue {
+        background-color: hsl(218, 44%, 22%);
+      }
+      .grayish-blue {
+        color: hsl(220, 15%, 55%);
+      }
+      .dark-blue {
+        color: hsl(218, 44%, 22%);
+      }
+      .card {
+        width: 200px;
+        padding: 10px;
+      }
+      .qr-image {
+        width: inherit;
+        aspect-ratio: 1/1;
+      }
+      .border-rounded {
+        border-radius: 10px;
+      }
+      .flex-center {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .p-15 {
+        font-size: 15px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      body {
+        font-family: "customFont";
+      }
+    </style>
+  </head>
+  <body class="bg-light-gray flex-center">
+    <div class="card bg-white border-rounded">
+      <img
+        class="qr-image border-rounded"
+        src=".\images\image-qr-code.png"
+        alt="QR Image"
+      />
+      <div>
+        <p class="text-center dark-blue" style="font-weight: 700">
+          Improve your front-end skills by building projects
+        </p>
+        <p class="p-15 text-center grayish-blue" style="font-weight: 400">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Hammad Jamil</a>.
+    </div>
+  </body>
+</html>
